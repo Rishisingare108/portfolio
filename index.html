@@ -12,12 +12,14 @@
         <div class="container">
             <nav>
                 <P class="Logo"><span>R</span>ishi.in</P>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About me</a></li>
                     <li><a href="#project">Projects</a></li>
                     <li><a href="#contact">Contact me</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
@@ -70,6 +72,8 @@ Let’s connect and geek out over some code!</p>
                 <br>
                 <br>
                 <p>Coming soon...</p>
+                <br>
+                <br>
             </div>
         </div>
     </div>
@@ -90,17 +94,20 @@ Let’s connect and geek out over some code!</p>
                     <a href=""><i class="fa-brands fa-x-twitter"></i></a>
                     <a href=""><i class="fa-brands fa-instagram"></i></a>
                 </div>
-                <button class="btn"><a href="" class="btn2">Resume</a></button>
+                <button class="rbtn"><a href="" class= "resume">Resume</a></button>
             </div>
             <div class="contact-right">
                 <form>
                     <input type="text" name="Name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                    <button type="submit">submit</button>               
+                    <button id="btn2" type="submit">submit</button>               
                  </form>
             </div>
         </div>
+    </div>
+    <div class="copy">
+        <p>Copyright © Rishi. Made with <i class="fa-solid fa-heart"></i></p>
     </div>
 </div>
 </body>

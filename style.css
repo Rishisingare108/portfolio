@@ -144,7 +144,10 @@ nav ul li a:hover::after{
 /* projects */
 
 #project{
+    height: 50vh;
     padding: 30px 0;
+    width: 100%;
+    
 }
 
 #pdetail h1{
@@ -157,6 +160,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 #Details{
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,6 +168,9 @@ nav ul li a:hover::after{
 }
 
 /* contact me */
+/* #Contact{
+    height: 50vh;
+} */
 
 .contact-left h1{
     font-size: 60px;
@@ -187,11 +194,12 @@ nav ul li a:hover::after{
     color: #ff004f;
     margin-right: 15px;
     font-size:25px;
-
 }
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
+    padding-top: 20px;
+    margin-bottom: 30px;
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
@@ -202,17 +210,122 @@ nav ul li a:hover::after{
     color: #ff004f;
     transform: translateY(-5px);
 }
-
-.btn2{
-    display: inline-block;
-    background-color: #ff004f;
+.resume{
     text-decoration: none;
-    color: white;
+    color:  white ;
+}
+
+.rbtn{
+    background-color: #080808;
+    border-color: #ff004f;
+    size: 30px;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+}
+
+.rbtn:hover{
+    background-color: #ff004f;
 
 }
-.btn{
-    text-decoration: none;
-    border-radius: 5px;
-    border-color: none;
-    font-size: 15px;
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+
+    width:100%;
+    border :0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    
+ }
+ 
+ #btn2{
+    height: 40px;
+    width: 110px;
+    font-size: 18px;
+    border-radius: 6px;
+    background-color: #080808;
+    border-color: #ff004f;
+    color: #fff;
+ }
+
+ #btn2:hover{
+    background-color: #ff004f;
+ }
+
+ .copy{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+ }
+
+ .copy i{
+    color: red;
+ }
+
+ /* -------------css for small screen ------------ */
+@media only screen and (max-width: 600px) {
+    #header {
+        background-attachment: scroll;
+        background-image: url(/images/phone\ back.png);
+        background-position: top;
+    }
+    .header-text {
+        margin-top: 50vh;
+        font-size: 16px;
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    nav .fa-solid.fa-bars, nav .fa-solid.fa-xmark {
+        display: block;
+        font-size: 25px;
+    }
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid.fa-xmark {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .about-col1, .about-col2, .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+    .about-col1 {
+        margin-bottom: 30px;
+    }
+    .contact-right {
+        margin-top: 30px;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
+.fa-solid.fa-bars, .fa-solid.fa-xmark {
+    display: none;
 }
